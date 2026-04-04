@@ -5,17 +5,13 @@
 }
 .welcome {
   background: url("../../../assets/img/48.png") no-repeat center;
-  background-size: 100%;
-  background-position: right;
-  background-position-y: top;
+  background-size: cover;
   display: flex;
   height: 100vh;
   width: 100%;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  animation-name: fadeIn12;
-  animation-duration: 6s;
   position: relative;
 
 }
@@ -230,7 +226,7 @@ th {
 #body{
   background: url("../../../assets/img/144.jpg") no-repeat center;
   background-size: cover;
-  max-height: 500vh;
+  max-height: 650vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -239,7 +235,8 @@ th {
 }
 #content {
   background: url("../../../assets/img/145.png") no-repeat center;
-  background-size: cover;
+  background-size: 100vw;
+  background-position-y:bottom ;
   display: flex;
   justify-content: center;
   height: 100vh;
@@ -269,8 +266,9 @@ th {
   flex-direction: row;
   align-items: center;
  }
+
 #content2 {
-  background: url("../../../assets/img/45.png") no-repeat center;
+  background: url("../../../assets/img/345.png") no-repeat center;
   background-size: cover;
   display: flex;
   position: relative;
@@ -281,20 +279,35 @@ th {
   align-items: center;
 
 }
-
+.text{
+  background: white;
+  opacity: 0.85;
+  border-radius: 50px 15px  ;
+  height: 170px;
+  width: 270px;
+  font-family:'vAcadei'!important;
+  font-size: 45px;
+  flex-direction: column;
+  color:maroon;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: example;
+  animation-duration: 4s;
+}
 
 #text{
   /*background: url("/78.png") center ;*/
   opacity: 0.9;
   height: 300px;
-
+  flex-direction: column;
   background-size: cover;
   display: flex;
-  font-family:'Lobster'!important;
+  font-family:'vAcadei'!important;
   font-size: 60px;
   padding: 20px;
-  color: maroon;
-  justify-content: center;
+  color: white;
+  justify-content: end;
   align-items: center;
 
 
@@ -344,7 +357,118 @@ body, html {
 
 @keyframes example {
   from {height: 0}
-  to {height: 100%}
+  to {height: 50%}
 }
 
+
+
+.timeline-card {
+  width: 390px;
+  height: 100%;
+  padding: 300px 24px 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+.title {
+  text-align: center;
+  font-size: 34px;
+  font-style: italic;
+  color: maroon;
+  margin-bottom: 40px;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-left: 40px;
+  position: relative;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 78px 28px 1fr;
+  align-items: center;
+  column-gap: 18px;
+  position: relative;
+}
+
+.timeline-image {
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.timeline-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 50%;
+}
+
+.timeline-line {
+  position: relative;
+  width: 28px;
+  display: flex;
+  justify-content: center;
+  align-self: stretch;
+}
+
+.timeline-line::before {
+  content: "";
+  position: absolute;
+  top: -28px;
+  bottom: -28px;
+  width: 2px;
+  background: maroon;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.timeline-item:first-child .timeline-line::before {
+  top: 50%;
+}
+
+.timeline-item:last-child .timeline-line::before {
+  bottom: 50%;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: maroon;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.timeline-content {
+  color: maroon;
+}
+
+.time {
+  font-size: 42px;
+  line-height: 1;
+  font-style: italic;
+  margin-bottom: 8px;
+  font-family: "Great Vibes", cursive;
+
+  color: maroon;
+}
+
+.text34 {
+  font-size: 20px;
+  line-height: 1.35;
+  font-family: "vAcadei";
+
+  max-width: 180px;
+}
 

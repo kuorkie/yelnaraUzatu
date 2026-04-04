@@ -19,7 +19,7 @@ export class RsvpComponent {
       attend: ['', Validators.required]
     });
   }
-  fireCollection =  collection(this.firestore,'yelnaraWed')
+  fireCollection =  collection(this.firestore,'yelnaraUzatu')
 
   onSubmit() {
     if (this.rsvpForm.valid) {
