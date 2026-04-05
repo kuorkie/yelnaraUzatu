@@ -1,9 +1,7 @@
 .rsvp-form {
-  max-width: 600px;
   color: maroon;
-  padding: 50px 20px 50px 20px;
+  padding: 30px 20px 30px 20px;
   border-radius: 8px;
-  margin-top: 300px;
   font-family: vAcadei;
 }
 input[type="radio"] {
